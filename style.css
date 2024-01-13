@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    color: rgb(165, 161, 161);
 }
 .container{
     display: block;
@@ -12,9 +13,6 @@ body{
     color: bisque;
     font-size: 70px;
 }
-.header p{
-    color: gray;
-}
 .header a{
     text-decoration: none;
     color: rgb(124, 120, 120);
@@ -24,17 +22,68 @@ body{
     padding: 20px 50px;
     border-radius: 4px;
     cursor: pointer;
-    margin: 30px 0;
     position: relative;
     border: black;
-    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+.botton{
+    margin: 90px 0;
 }
 .header a:hover{
     background-color: lightgreen;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
 }
 .header h1{
     font-size: 50px;
     font-weight: lighter;
     color: rgb(124, 120, 120);
     font-family: serif;
+}
+.images img{
+    filter: grayscale(100%);
+    width: 35px;
+    padding: 5px;
+}
+.images img:hover{
+    filter: grayscale(0%);
+}
+.release{
+    margin: 70px 0 120px 0;
+}
+.release a{
+    text-decoration: none;
+    color: rgb(233, 175, 104);
+}
+footer div{
+    display: inline-block;
+    margin: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(165, 161, 161);
+}
+.codekit{
+    text-align: right;
+}
+.brain{
+    text-align: left;
+}
+footer a h2 i{
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 100%;
+    padding: 8px;
+}
+footer a h3 i{
+    border-radius: 100%;
+    padding: 12px;
+}
+.about{
+    font-size: 13px;
+}
+.about a{
+    text-decoration: none;
+    color: rgb(233, 175, 104);
+}
+.about p{
+    padding: 1px;
 }
