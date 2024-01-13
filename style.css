@@ -1,0 +1,40 @@
+body{
+    background-color: white;
+}
+.container{
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.fa-shield-dog{
+    margin-top: 70px;
+    color: bisque;
+    font-size: 70px;
+}
+.header p{
+    color: gray;
+}
+.header a{
+    text-decoration: none;
+    color: rgb(124, 120, 120);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: bisque;
+    padding: 20px 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 30px 0;
+    position: relative;
+    border: black;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+.header a:hover{
+    background-color: lightgreen;
+}
+.header h1{
+    font-size: 50px;
+    font-weight: lighter;
+    color: rgb(124, 120, 120);
+    font-family: serif;
+}
