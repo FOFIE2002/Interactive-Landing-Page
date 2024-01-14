@@ -76,6 +76,7 @@ footer a h2 i{
 footer a h3 i{
     border-radius: 100%;
     padding: 12px;
+    color: rgb(233, 175, 104);
 }
 .about{
     font-size: 13px;
