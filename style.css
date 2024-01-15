@@ -104,10 +104,9 @@ footer a h3 i{
 
 .notification.has-action.loaded {
     opacity: 1;
-    transform: translateX(calc(10% + 10px));
+    /* transform: translateX(calc(10% + 0px)); */
+    transform: translateY(0);
 }
-
-
 .notification-inner {
     display: flex;
     padding: 10px;
