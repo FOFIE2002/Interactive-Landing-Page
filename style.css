@@ -88,3 +88,59 @@ footer a h3 i{
 .about p{
     padding: 1px;
 }
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 450px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.notification.has-action.loaded {
+    opacity: 1;
+    transform: translateX(calc(10% + 10px));
+}
+
+
+.notification-inner {
+    display: flex;
+    padding: 10px;
+}
+
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.notification-body {
+    flex: 1;
+}
+
+.notification-body-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.notification-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.notification-actions-top,
+.notification-actions-bottom {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: black;
+}
+

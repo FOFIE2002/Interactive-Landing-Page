@@ -1,61 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>muzzle app</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/97d93363c8.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/97d93363c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-     <div class="header">
+        <div class="notification has-action loaded">
+            <div class="notification-inner">
+                <div class="notification-icon" style="background-image: url(&quot;slack.png&quot;);"></div>
+                <div class="notification-body">
+                    <div class="notification-body-header">Amazon</div>
+                    <div class="notification-body-content">Customers who bought "leather sex Swing" also liked "leather cross"</div>
+                    <div class="notification-actions">
+                        <div class="notification-actions-top" data-trigger="notifiactions._close">reply</div>
+                        <div class="notification-actions-bottom" data-trigger="notifiactions._close">Delete</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification loaded">
+            <div class="notification-inner">
+                <div class="notification-icon" style="background-image: url(&quot;hangouts.png&quot;);"></div>
+                <div class="notification-body">
+                    <div class="notification-body-header">Sidechick</div>
+                    <div class="notification-body-content">🥵🥵</div>
+                </div>
+            </div>
+        </div>
+      <div class="header">
         <i class="fa-solid fa-shield-dog" id="barking"></i>
         <h1>muzzle</h1>
-        
-        <p>a simple mac app to silence embarrassing <br>notifications while screensharing</p>
-        <div class="botton">
-        <a href="https://muzzleapp.com/binaries/muzzle.zip">
-    <span>
-        <i class="fa-solid fa-cloud-arrow-down"></i>
-        Download
-    </span>
-    
-        </a>
-        </div>
-        <p>Automatically turn on Do Not Disturb when <br>screensharing starts Works with almost everything. <br>including:</p>
-        <!-- place five icons on one line -->
-        <div class="images">
-            <img src="slack.png" alt="slack">
-            <img src="join-me.png" alt="join-me">
-            <img src="hangouts.png" alt="hangouts">
-            <img src="zoom.png" alt="zoom">
-            <img src="bluejeans.png" alt="bluejean">
-        </div>
-     </div>
 
-     <div class="release">
-        <a href="https://muzzleapp.com/updates" target="_blank">Release Notes</a>
-        <br>
+        <p>
+          a simple mac app to silence embarrassing <br />notifications while
+          screensharing
+        </p>
+        <div class="botton">
+          <a href="https://muzzleapp.com/binaries/muzzle.zip">
+            <span>
+              <i class="fa-solid fa-cloud-arrow-down"></i>
+              Download
+            </span>
+          </a>
+        </div>
+        <p>
+          Automatically turn on Do Not Disturb when <br />screensharing starts
+          Works with almost everything. <br />including:
+        </p>
+
+        <div class="images">
+          <img src="slack.png" alt="slack" />
+          <img src="join-me.png" alt="join-me" />
+          <img src="hangouts.png" alt="hangouts" />
+          <img src="zoom.png" alt="zoom" />
+          <img src="bluejeans.png" alt="bluejeans" />
+        </div>
+      </div>
+
+      <div class="release">
+        <a href="https://muzzleapp.com/updates" target="_blank"
+          >Release Notes</a
+        >
+        <br />
         <a href="https://muzzleapp.com/help" target="_blank">Help</a>
+      </div>
+
+      <footer>
+        <div class="codekit">
+          <a href="https://codekitapp.com/" target="_blank"
+            ><span>Build website?</span><br />You'll love my app. It's roughly
+            <br />
+            183xbetter than macOS Catalina.
+            <h2><i class="fa-solid fa-code"></i>CodeKit</h2></a
+          >
+        </div>
+
+        <div class="brain">
+          <a href="http://brianburkett.net/" target="_blank"
+            ><span>Don't build website?</span><br />It's a good thing I know a
+            guy. <br />
+            (He designed and built this one)
+            <h3><i class="fa-solid fa-code"></i>Brain Burkett</h3></a
+          >
+        </div>
+      </footer>
+
+      <div class="about">
+        <a href="https://twitter.com/bdkjones" target="_blank"
+          >Follow @bdkjones</a
+        ><br />
+        <p>2020 INCIDENT 57, iNC & Bryan D K Jones</p>
+        <p>Thanks to: Brain Josh Amber Nick Sante Bryan</p>
+        <p>Wade Natalie Doug Aaron Guy</p>
+      </div>
     </div>
 
-    <footer>
-        <div class="codekit"><a href="https://codekitapp.com/" target="_blank"><span>Build website?</span><br>You'll love my app. It's roughly <br> 183xbetter than macOS Catalina. <h2><i class="fa-solid fa-code"></i>CodeKit</h2></a></div>
-
-        <div class="brain"><a href="http://brianburkett.net/" target="_blank"><span>Don't build website?</span><br>It's a good thing I know a guy. <br> (He designed and built this one) <h3><i class="fa-solid fa-code"></i>Brain Burkett</h3></a></div>
-    </footer>
-    
-
-    <div class="about">
-    <a href="https://twitter.com/bdkjones" target="_blank">Follow @bdkjones</a><br>
-    <p>2020 INCIDENT 57, iNC & Bryan D K Jones </p>
-    <p>Thanks to: Brain Josh Amber Nick Sante Bryan</p> 
-    <p>Wade Natalie Doug Aaron Guy</p>
-</div>
-
-</div>
-
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

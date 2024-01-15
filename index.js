@@ -1,19 +1,19 @@
-// function dogbarking() {
-//     var a;
-//     a = document.getElementById("barking");
-//     a.innerHTML = "&#xf244;";
-//     setTimeout(function () {
-//       a.innerHTML = "&#xf243;";
-//     }, 1000);
-//     setTimeout(function () {
-//       a.innerHTML = "&#xf242;";
-//     }, 2000);
-//     setTimeout(function () {
-//       a.innerHTML = "&#xf241;";
-//     }, 3000);
-//     setTimeout(function () {
-//       a.innerHTML = "&#xf240;";
-//     }, 4000);
-//   }
-//   dogbarking();
-//   setInterval(dogbarking, 5000);
+document.addEventListener('DOMContentLoaded', function () {
+    const notifications = document.querySelectorAll('.notification');
+
+    notifications.forEach((notification, index) => {
+        setTimeout(() => {
+            notification.classList.add('loaded');
+        }, index * 1000); // Adjust the delay as needed
+
+        const closeButton = notification.querySelector('[data-trigger="notifications._close"]');
+        if (closeButton) {
+            closeButton.addEventListener('click', () => {
+                notification.classList.remove('loaded');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300); // Match the CSS transition duration
+            });
+        }
+    });
+});
