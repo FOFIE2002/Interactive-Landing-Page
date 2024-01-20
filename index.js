@@ -17,3 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+function deleteText(){
+    var textELement = document.getElementById("notification");
+    textELement.remove();
+};

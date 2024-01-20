@@ -13,37 +13,40 @@
   <body>
     <div class="container">
         <!-- 1st notification -->
-      <div class="notification has-action loaded">
+      <div class="notification has-action loaded" id="notification">
         <div class="notification-inner">
           <div
             class="notification-icon"
             style="background-image: url('slack.png')"
           ></div>
           <div class="notification-body">
+            <div>
             <div class="notification-body-header">Amazon</div>
-            <div class="notification-body-content">
+            <div class="notification-body-content" >
               Customers who bought "leather sex Swing" also liked "leather
               cross"
             </div>
-            <!-- 2nd notification -->
+          </div>
+            <!-- delete or reply button -->
             <div class="notification-actions">
               <div
                 class="notification-actions-top"
                 data-trigger="notifiactions._close"
               >
-                reply
+                <button onclick="deleteText()">reply</button>
               </div>
               <div
                 class="notification-actions-bottom"
                 data-trigger="notifiactions._close"
               >
-                Delete
+                <button onclick="deleteText()">Delete</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="notification loaded">
+      <!-- 2nd notification -->
+      <div class="notification loaded two">
         <div class="notification-inner">
           <div
             class="notification-icon"
@@ -55,6 +58,8 @@
           </div>
         </div>
       </div>
+
+      <!-- main content -->
       <div class="header">
         <i class="fa-solid fa-shield-dog" id="barking"></i>
         <h1>muzzle</h1>
@@ -77,11 +82,11 @@
         </p>
 
         <div class="images">
-          <img src="slack.png" alt="slack" />
-          <img src="join-me.png" alt="join-me" />
-          <img src="hangouts.png" alt="hangouts" />
-          <img src="zoom.png" alt="zoom" />
-          <img src="bluejeans.png" alt="bluejeans" />
+          <div><img src="slack.png" alt="slack" /> <br><p>slack </p></div>
+          <div><img src="join-me.png" alt="join-me" /><br><p>join-me </p></div>
+          <div><img src="hangouts.png" alt="hangouts" /><br><p>hangouts </p> </div>
+          <div><img src="zoom.png" alt="zoom" /> <br><p>zoom</p> </div>
+          <div><img src="bluejeans.png" alt="bluejeans" /><br><p>bluejeans</p> </div>
         </div>
       </div>
 

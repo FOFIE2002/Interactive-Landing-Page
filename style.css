@@ -38,6 +38,16 @@ body{
     color: rgb(124, 120, 120);
     font-family: serif;
 }
+.images div{
+    display: inline-block;
+}
+.images p{
+    opacity: 0;
+}
+.images div:hover p{
+    opacity: 1;
+    transition: opacity 1s;
+}
 .images img{
     filter: grayscale(100%);
     width: 35px;
@@ -102,10 +112,13 @@ footer a h3 i{
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.notification.has-action.loaded {
+.notification.loaded {
     opacity: 1;
-    /* transform: translateX(calc(10% + 0px)); */
-    transform: translateY(0);
+    /* transform: translateX(calc(10% + 0px)); 
+    transform: translateY(0); */
+}
+.notification.loaded.two{
+    opacity: 0;
 }
 .notification-inner {
     display: flex;
